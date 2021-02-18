@@ -1,0 +1,62 @@
+﻿{
+	"config":{
+		"solver":["lant", "lissa","newsamp"],
+		"l2": 0.00001,
+		"search-num":0,
+		"max-iter":30,
+		"warm-up":1,
+		"init-iter":3,
+		"model":"LSvmYELP",
+		"t":1,
+		"print-hess":true
+	},
+	"lant":
+	{
+		"stage_a":3,
+		"stage_b":3,
+		"keep_rank":150,
+		"more_rank":30,
+		"sample_size":20000,
+		"power_iter":3,
+		"scale_w":1,
+		"step_size":0.7,
+		"use_hess_vt":1
+	},
+	"lissa":
+	{
+		"t1":20000,
+		"s1":2,
+		"s2":50000,
+		"step_size":0.9
+	},
+	"svrg":
+	{
+		"m":1120000,
+		"step_size":0.5
+	},
+	"newsamp":
+	{
+		"rank":150,
+		"step_size":0.7,
+		"sample_size":20000
+	},
+	"slbfgs":
+	{
+		"m":560,
+		"b":500,
+		"bh":2500,
+		"store_num":10,
+		"update_period":10,
+		"step_size":0.005
+	},
+	"sbbfgs":
+	{
+		"m":750,
+		"b":750,
+		"bh":750,
+		"rank":20,
+		"store_num":10,
+		"step_size":0.0075
+	}
+	
+}
